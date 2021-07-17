@@ -14,4 +14,7 @@ Text Preprocessing is the process of bringing the text into a form that is predi
 <li>Build a table of vocabulary to map the split tokens to numerical indices.
 
 <li>Convert text into sequences of numerical indices so they can be manipulated by models easily.
+  
+ ### 3. Language Models <br>
+Language models are key to natural language processing. n -grams provide a convenient model for dealing with long sequences by truncating the dependence. Long sequences suffer from the problem that they occur very rarely or never. There is a lot of structure but not enough frequency to deal with infrequent word combinations efficiently via Laplace smoothing. The main choices for reading long sequences are random sampling and sequential partitioning. The latter can ensure that the subsequences from two adjacent minibatches during iteration are adjacent on the original sequence.
 
