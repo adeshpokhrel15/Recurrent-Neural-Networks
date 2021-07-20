@@ -26,5 +26,11 @@ We can train an RNN-based character-level language model to generate text follow
  
 ### 6. Backpropagation Through Time <br>
 Backpropagation through time is merely an application of backpropagation to sequence models with a hidden state. Truncation is needed for computational convenience and numerical stability, such as regular truncation and randomized truncation. High powers of matrices can lead to divergent or vanishing eigenvalues. This manifests itself in the form of exploding or vanishing gradients. For efficient computation, intermediate values are cached during backpropagation through time.
+  
+### 7.Gated Recurrent Units (GRU) <br>
+Gated RNNs can better capture dependencies for sequences with large time step distances. Reset gates help capture short-term dependencies in sequences. Update gates help capture long-term dependencies in sequences. GRUs contain basic RNNs as their extreme case whenever the reset gate is switched on. They can also skip subsequences by turning on the update gate.
+  
+### 8. Long Short-Term Memory (LSTM) <br>
+LSTMs have three types of gates: input gates, forget gates, and output gates that control the flow of information. The hidden layer output of LSTM includes the hidden state and the memory cell. Only the hidden state is passed into the output layer. The memory cell is entirely internal. LSTMs can alleviate vanishing and exploding gradients.
                                                                
 
