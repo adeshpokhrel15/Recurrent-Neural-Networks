@@ -32,5 +32,8 @@ Gated RNNs can better capture dependencies for sequences with large time step di
   
 ### 8. Long Short-Term Memory (LSTM) <br>
 LSTMs have three types of gates: input gates, forget gates, and output gates that control the flow of information. The hidden layer output of LSTM includes the hidden state and the memory cell. Only the hidden state is passed into the output layer. The memory cell is entirely internal. LSTMs can alleviate vanishing and exploding gradients.
+  
+### 9. Deep Recurrent Neural Networks <br>
+  In deep RNNs, the hidden state information is passed to the next time step of the current layer and the current time step of the next layer.There exist many different flavors of deep RNNs, such as LSTMs, GRUs, or vanilla RNNs. Conveniently these models are all available as parts of the high-level APIs of deep learning frameworks.Initialization of models requires care. Overall, deep RNNs require considerable amount of work (such as learning rate and clipping) to ensure proper convergence.
                                                                
 
