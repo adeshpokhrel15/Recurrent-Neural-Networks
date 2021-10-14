@@ -35,5 +35,15 @@ LSTMs have three types of gates: input gates, forget gates, and output gates tha
   
 ### 9. Deep Recurrent Neural Networks <br>
   In deep RNNs, the hidden state information is passed to the next time step of the current layer and the current time step of the next layer.There exist many different flavors of deep RNNs, such as LSTMs, GRUs, or vanilla RNNs. Conveniently these models are all available as parts of the high-level APIs of deep learning frameworks.Initialization of models requires care. Overall, deep RNNs require considerable amount of work (such as learning rate and clipping) to ensure proper convergence.
+  
+ ### 10. Bidirectional RNN <br>
+ In bidirectional RNNs, the hidden state for each time step is simultaneously determined by the data prior to and after the current time step.Bidirectional RNNs bear a striking resemblance with the forward-backward algorithm in probabilistic graphical models.Bidirectional RNNs are mostly useful for sequence encoding and the estimation of observations given bidirectional context.Bidirectional RNNs are very costly to train due to long gradient chains 
+ 
+### 11. Machine Translation and the Dataset <br>
+ Machine translation refers to the automatic translation of a sequence from one language to another. Using word-level tokenization, the vocabulary size will be significantly larger than that using character-level tokenization. To alleviate this, we can treat infrequent tokens as the same unknown token. We can truncate and pad text sequences so that all of them will have the same length to be loaded in minibatches.
+
+### 12. Encoder-Decoder Architecture <br>
+  The encoder-decoder architecture can handle inputs and outputs that are both variable-length sequences, thus is suitable for sequence transduction problems such as machine translation. The encoder takes a variable-length sequence as the input and transforms it into a state with a fixed shape.
+The decoder maps the encoded state of a fixed shape to a variable-length sequence.
                                                                
 
